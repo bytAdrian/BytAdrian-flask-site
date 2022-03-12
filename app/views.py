@@ -24,6 +24,7 @@ def password_generator( methods=["GET", "POST"]):
   message = None
   syns = None
 
+  #useless edit
   if request.args:
     keyword = request.args.get("keyword")
     task = q.enqueue(scrape_synomyns, keyword, result_ttl=86400)
